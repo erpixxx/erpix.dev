@@ -16,20 +16,32 @@ import MainItem from './components/MainItem.vue'
 </template>
 
 <style lang="css" scoped>
-@media (min-width: 1024px) {
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+}
+
+.wrapper header,
+.wrapper main {
+  padding: 5vh 5vw;
+}
+
+.wrapper > :first-child {
+  border-right: 1px solid var(--vt-c-divider-dark-2);
+}
+
+@media (max-width: 1260px) {
   .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
   }
-
-  .wrapper > * {
-    padding: 5rem calc(var(--section-gap) / 2);
+  .wrapper header,
+  .wrapper main {
+    padding: 0;
   }
-
   .wrapper > :first-child {
-    border-right: 1px solid var(--vt-c-divider-dark-2);
+    border-right: 0;
   }
 }
 </style>

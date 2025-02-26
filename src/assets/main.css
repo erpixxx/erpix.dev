@@ -12,11 +12,16 @@
     var(--main-c-tertiary)
   );
   --main-gradient-anim: gradient 5s linear infinite;
+
+  --mobile-width: 1260px;
 }
 
+body {
+  display: flex;
+  place-items: center;
+}
 #app {
   margin: 0 auto;
-  padding: 2rem;
   font-family: 'Roboto Mono';
   font-weight: normal;
 }
@@ -65,10 +70,9 @@ b {
   color: var(--vt-c-white);
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
+@media (max-width: 1260px) {
+  #app {
+    padding: 0 2rem;
   }
 }
 
