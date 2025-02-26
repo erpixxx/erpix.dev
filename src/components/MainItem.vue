@@ -30,6 +30,7 @@ main {
   animation: var(--main-gradient-anim);
   background: var(--main-gradient);
   background-size: 400%;
+  height: 100%;
   width: 600px;
   word-wrap: break-word;
 }
@@ -79,5 +80,22 @@ nav a.router-link-exact-active {
 
 nav :not(a.router-link-exact-active):hover {
   background-color: var(--color-background-mute);
+}
+
+@media (max-width: 1260px) {
+  .main-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .main-container-content {
+    height: 100%;
+  }
+  nav a {
+    border: 2px solid transparent;
+    width: 100%;
+  }
+  nav :not(a.router-link-exact-active):hover {
+    background-color: var(--color-background);
+  }
 }
 </style>

@@ -106,4 +106,11 @@ nav a.active {
   opacity: 0;
   transform: translateY(-20px);
 }
+
+@media (max-width: 1260px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+}
 </style>
