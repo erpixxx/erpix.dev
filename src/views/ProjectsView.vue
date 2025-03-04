@@ -73,6 +73,10 @@ const setActiveProject = async (project: (typeof projects)[number]) => {
 .project-container :deep(.project-bottom) {
   margin-top: auto;
 }
+.project-container :deep(.project-bottom__spacer) {
+  display: flex;
+  justify-content: space-between;
+}
 
 nav {
   display: flex;
