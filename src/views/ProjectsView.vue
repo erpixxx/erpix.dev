@@ -74,6 +74,7 @@ const setActiveProject = async (project: (typeof projects)[number]) => {
   margin-top: auto;
 }
 .project-container :deep(.project-bottom__spacer) {
+  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
 }
