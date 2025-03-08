@@ -38,7 +38,7 @@ main {
   background-color: var(--color-background);
 }
 .main-container-content {
-  background-color: var(--vt-c-black-soft);
+  background-color: var(--color-background-soft);
   padding: 1rem;
   height: 400px;
   overflow: hidden;
