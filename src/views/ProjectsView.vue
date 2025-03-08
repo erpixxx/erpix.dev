@@ -86,7 +86,7 @@ nav {
 }
 
 nav a {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: var(--color-background-mute);
   border-radius: 0.5rem;
   color: var(--color-text);
   padding: 0.2rem 1rem;
@@ -94,8 +94,8 @@ nav a {
 }
 
 nav a.active {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid var(--color-text);
+  background-color: var(--color-background-light);
+  border: 1px solid var(--color-border);
   font-weight: bold;
 }
 
