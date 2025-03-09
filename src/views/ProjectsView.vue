@@ -117,5 +117,10 @@ nav a.active {
     flex-wrap: wrap;
     justify-content: left;
   }
+  .project-container :deep(.project-bottom__spacer) {
+    margin-top: 1rem;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 </style>
